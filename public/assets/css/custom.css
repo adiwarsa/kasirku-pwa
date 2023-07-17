@@ -1,0 +1,54 @@
+/**
+ *
+ * You can write your CSS code here, DO NOT touch the default JavaScript file
+ * because it will make it harder for you to update.
+ * 
+ */
+
+/*# sourceMappingURL=custom.css.map */
+
+
+@media (max-width: 1024px){
+  .main-sidebar{
+    opacity: 0;
+  }
+
+}
+
+
+
+@font-face /*perintah untuk memanggil font eksternal*/
+{
+    font-family: 'Casanova'; /*memberikan nama bebas untuk font*/
+    src: url('../fonts/New-Font/casanova/Casanova-Font-Free.ttf');/*memanggil file font eksternalnya di folder nexa*/
+}
+
+@font-face /*perintah untuk memanggil font eksternal*/
+{
+    font-family: 'Handcraft'; /*memberikan nama bebas untuk font*/
+    src: url('../fonts/New-Font/handcraft_script/Handcrafts-Script.ttf');/*memanggil file font eksternalnya di folder nexa*/
+}
+
+@font-face /*perintah untuk memanggil font eksternal*/
+{
+    font-family: 'Lt_Museum_Reguler'; /*memberikan nama bebas untuk font*/
+    src: url('../fonts/New-Font/lt_museum/LTMuseum-Reg.ttf');/*memanggil file font eksternalnya di folder nexa*/
+}
+
+@font-face /*perintah untuk memanggil font eksternal*/
+{
+    font-family: 'Lt_Museum_Light'; /*memberikan nama bebas untuk font*/
+    src: url('../fonts/New-Font/lt_museum/LTMuseum-Light.ttf');/*memanggil file font eksternalnya di folder nexa*/
+}
+
+@font-face /*perintah untuk memanggil font eksternal*/
+{
+    font-family: 'Neuton_Reguler'; /*memberikan nama bebas untuk font*/
+    src: url('../fonts/New-Font/neuton/Neuton-SC-Regular.ttf');/*memanggil file font eksternalnya di folder nexa*/
+}
+
+@font-face /*perintah untuk memanggil font eksternal*/
+{
+    font-family: 'Neuton_ExtraLight'; /*memberikan nama bebas untuk font*/
+    src: url('../fonts/New-Font/neuton/Neuton-SC-Extralight.ttf');/*memanggil file font eksternalnya di folder nexa*/
+}
