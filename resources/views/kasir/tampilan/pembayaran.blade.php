@@ -39,10 +39,6 @@
                             <h6 class="mr-2">F1 = Untuk Pembayaran Cash</h6>
                             <h6 class="ml-3">Tekan 2x F1 Untuk Fokus</h6>
                         </div>
-                        <div class="col-lg-4 col-md-4 col-sm-4 col-12 marginTop">
-                            <h6 class="mr-2">F2 = Untuk Pembayaran TF</h6>
-                            <h6 class="ml-3">Tekan 2x F2 Untuk Fokus</h6>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -98,10 +94,10 @@
                 <a class="nav-link active" id="cash-tab" data-toggle="tab" href="#cash" role="tab"
                     aria-controls="cash" aria-selected="true" onclick="textPembayaran('cash')">Cash</a>
             </li>
-            <li class="nav-item">
+            {{-- <li class="nav-item">
                 <a class="nav-link" id="transfer-tab" data-toggle="tab" href="#transfer" role="tab"
                     aria-controls="transfer" aria-selected="false" onclick="textPembayaran('transfer')">Transfer</a>
-            </li>
+            </li> --}}
         </ul>
         <div class="tab-content" id="myTabContent">
             <div class="tab-pane fade show active" id="cash" role="tabpanel" aria-labelledby="cash-tab">
@@ -112,7 +108,7 @@
                         id="pembayaran" autocomplete='off' placeholder="0" onkeyup="pembayaranCash()" required>
                 </div>
             </div>
-            <div class="tab-pane fade" id="transfer" role="tabpanel" aria-labelledby="transfer-tab">
+            {{-- <div class="tab-pane fade" id="transfer" role="tabpanel" aria-labelledby="transfer-tab">
                 <form class="mt-4" id="form_pembayaran_transfer">
                     <div class="row">
                         <div class="col">
@@ -165,7 +161,7 @@
                     </div>
                     <button type="reset" id="reset_transfer" hidden></button>
                 </form>
-            </div>
+            </div> --}}
         </div>
     </div>
     <div class="col-sm-6 col-md-5 col-lg-4">

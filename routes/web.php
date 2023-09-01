@@ -54,6 +54,9 @@ Route::group(['middleware' => ['auth', 'checkrole:2']], function () {
   Route::get('kasir/disable-alert', [App\Http\Controllers\Kasir\TransaksiController::class, 'disableAlert'])->name('disable-alert');
 
   Route::resource('kasir', App\Http\Controllers\Kasir\TransaksiController::class, ['names' => 'kasir']);
+
+  Route::resource('keranjang', App\Http\Controllers\Kasir\KeranjangController::class, ['names' => 'keranjang']);
+  Route::get('keranjang/hapus/{id}', [App\Http\Controllers\Kasir\KeranjangController::class, 'destroy']);
 });
 
 Route::group(['middleware' => ['auth', 'checkrole:1,2']], function () {

@@ -139,27 +139,26 @@
       </div>
       <div class="selectgroup selectgroup-pills">
         <label class="selectgroup-item">
-          <input type="checkbox" name="transfer" value="transfer" class="selectgroup-input transfer" onclick="FilterLaporan('status')" id="transfer">
-          <span class="selectgroup-button">Transfer</span>
+          <input type="checkbox" name="transfer" value="transfer" class="selectgroup-input transfer" onclick="FilterLaporan('status')" id="transfer" hidden>
         </label>
       </div>
     </div>
     <div class="col-12 d-flex custom-center-flex mt-3">
       <div class="mb-2 ">
-        <div class="d-flex custom-flex">
-          <div class="col-md-4 col-lg-4 hiddenn">
-            <label class="form-label pointer" for="pendapatan">Total Penjualan</label>
+        <div class="d-flex justify-content-between">
+          <div class="col-md-6 col-lg-6 hiddenn">
+            <label class="form-label pointer" for="pendapatan">Total <br> Penjualan</label>
             <h5 class="pointer" id="pendapatan" onclick="detailPendapatan_Keuntungan('pendapatan')" title="Klik Untuk Melihat Detail Pendapatan!">
               @currency($pendapatan)</h5>
             <input type="hidden" id="cek_pendapatan" value="{{ $pendapatan }}">
           </div>
-          <div class="col-md-4 col-lg-4 hiddenn">
+          <div class="col-md-4 col-lg-6 hiddenn">
             <label class="form-label pointer" for="keuntungan">Total Keuntungan</label>
             <h5 class="pointer" id="keuntungan" onclick="detailPendapatan_Keuntungan('keuntungan')" title="Klik Untuk Melihat Detail Keuntungan!">
               @currency($keuntungan)</h5>
             <input type="hidden" id="cek_keuntungan" value="{{ $keuntungan }}">
           </div>
-          <div class="col-md-4 col-lg-4 hiddenn">
+          {{-- <div class="col-md-4 col-lg-4 hiddenn">
             <label class="form-label pointer" for="cek_tf_br">Total TF BANK BRI</label>
             <h5 class="pointer" id="text_bank_bri" onclick="detailBank('BRI')" title="Klik Untuk Melihat Detail TF BANK BRI!">
               @currency($data['total_tf_bri']->sum('pembayaran_transfer'))</h5>
@@ -170,7 +169,7 @@
             <h5 class="pointer" id="text_bank_bpd" onclick="detailBank('BPD')" title="Klik Untuk Melihat Detail TF BANK BPD!">
               @currency($data['total_tf_bpd']->sum('pembayaran_transfer'))</h5>
             <input type="hidden" id="cek_tf_bpd" value="{{ $data_bank['bpd'] }}">
-          </div>
+          </div> --}}
           <div class="flexxx">
             <div class="col-md-4 col-lg-4">
               <label class="form-label pointer" for="pendapatan">Total Penjualan</label>
@@ -407,15 +406,6 @@
             show: true
           , });
           modal.find('.modal-dialog').addClass('modal-xl');
-
-          // $('#modalInfo').on('shown.bs.modal', function() {
-          //     $("#modalInfo").modal({
-          //         show: true,
-          //         backdrop: 'static',
-          //     });
-          // });
-
-
 
           if (cek_status == "pendapatan") {
             modal.find('.modal-title').text('Detail Penjualan');

@@ -112,13 +112,16 @@
         <h2 class="centered">
             Invoice : {{ $invoice->invoice }}
         </h2>
+        <h2 class="centered size">
+                {{ Carbon\Carbon::parse($invoice->created_at)->isoFormat('DD-MM-YYYY') . ' ' . Carbon\Carbon::parse($invoice->created_at)->toTimeString() }}
+        </h2>
         <table>
             <thead>
                 <tr>
-                    <th class="keterangan">Ket.</th>
+                    <th class="keterangan">Barang</th>
                     <th class="qty">Qty</th>
                     <th class="harga">Rp.</th>
-                    <th class="jumlah">Jml</th>
+                    <th class="jumlah">Total</th>
                 </tr>
             </thead>
             <tbody>
@@ -194,7 +197,7 @@
         </div>
 
         <br>
-        <div>
+        {{-- <div>
             <span>Keterangan :
                 @if ($invoice->status == 'cash')
                     Cash
@@ -206,15 +209,10 @@
                     @endif
                 @endif
             </span>
-        </div>
+        </div> --}}
         <hr>
 
-        <div class="centered">
-            <span>Tanggal :
-                {{ Carbon\Carbon::parse($invoice->created_at)->isoFormat('DD-MM-YYYY') . ' ' . Carbon\Carbon::parse($invoice->created_at)->toTimeString() }}
-            </span>
-        </div>
-        <p class="centered" style="font-size: 0.9em;">* TerimaKasih Telah Berbelanja *
+        <p class="centered" style="font-size: 0.9em;">* Terima Kasih Telah Berbelanja *
             <br>* {{ $toko->nama_toko }} *
         </p>
         <div style="border-bottom:2px dashed rgb(0, 0, 0);"></div>

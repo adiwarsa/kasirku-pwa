@@ -20,7 +20,7 @@
             <th>Qty</th>
             <th>Sub Total</th>
             <th>Pembayaran Cash</th>
-            <th>Pembayaran Transfer</th>
+            {{-- <th>Pembayaran Transfer</th> --}}
             <th>Kembalian</th>
             <th>Tanggal</th>
             <th>Status</th>
@@ -61,7 +61,7 @@
                     @endif
 
                 </td>
-                <td
+                {{-- <td
                     @if ($value['produk']->count() > 1) rowspan="{{ $value['produk']->count() }}" style='vertical-align: middle;' @endif>
                     @if ($value['pembayaran_transfer'] == null)
                         0
@@ -69,7 +69,7 @@
                         {{ $value['pembayaran_transfer'] }}
                     @endif
 
-                </td>
+                </td> --}}
                 <td
                     @if ($value['produk']->count() > 1) rowspan="{{ $value['produk']->count() }}" style='vertical-align: middle;' @endif>
                     {{ $value['kembalian'] }}
@@ -103,7 +103,7 @@
             <td>{{ $total['qty'] }}</td>
             <td>{{ $total['sub_total'] }}</td>
             <td>{{ $total['pembayaran'] }}</td>
-            <td>{{ $total['pembayaran_transfer'] }}</td>
+            {{-- <td>{{ $total['pembayaran_transfer'] }}</td> --}}
             <td>{{ $total['kembalian'] }}</td>
             <td colspan="4"></td>
             <td>{{ $total['harga_jual'] }}</td>

@@ -6,7 +6,7 @@
             <th>Qty</th>
             <th style="width: 40rem !important;">Sub Total</th>
             <th style="width: 40rem !important;">Pembayaran Cash</th>
-            <th style="width: 40rem !important;">Pembayaran Transfer</th>
+            {{-- <th style="width: 40rem !important;">Pembayaran Transfer</th> --}}
             <th style="width: 40rem !important;">Kembalian</th>
             <th style="width: 40rem !important;">Tanggal</th>
             <th style="width: 1rem !important; ">Status</th>
@@ -21,7 +21,7 @@
                 <td>{{ $value->qty }}</td>
                 <td class="text-right">@currency2($value->sub_total)</td>
                 <td class="text-right">@currency2($value->pembayaran)</td>
-                <td class="text-right">@currency2($value->pembayaran_transfer)</td>
+                {{-- <td class="text-right">@currency2($value->pembayaran_transfer)</td> --}}
                 <td class="text-right">@currency2($value->kembalian)</td>
                 <td>{{ Carbon\Carbon::parse($value->tanggal)->isoFormat('DD-MM-YYYY') }}</td>
                 <td>

@@ -28,9 +28,17 @@ class Invoice extends Model
         'tanggal',
         'created_at'
     ];
+    protected $appends = [
+        'formatted_created_at',
+    ];
 
     public function user()
     {
         return $this->belongsTo(User::class, 'id_user');
+    }
+
+    //Mengubah format tanggal created_at menjadi Hari, tanggal bulan tahun, jam menit detik
+    public function getFormattedCreatedAtAttribute(): string {
+        return $this->created_at->isoFormat('D MMMM YYYY, HH:mm:ss');
     }
 }

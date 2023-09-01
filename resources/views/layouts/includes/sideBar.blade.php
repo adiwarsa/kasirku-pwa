@@ -37,12 +37,12 @@
                     </a>
                 </li>
 
-                <li class="menu-header">Supplier</li>
+                {{-- <li class="menu-header">Supplier</li>
                 <li class="nav-item @yield('active_supplier')">
                     <a href="{{ route('supplier.index') }}" class="nav-link">
                         <i class="fas fa-archive"></i><span>Supplier</span>
                     </a>
-                </li>
+                </li> --}}
 
                 <li class="menu-header">Laporan</li>
                 <li class="nav-item @yield('active_laporan')">
@@ -72,10 +72,10 @@
                     </a>
                 </li>
 
-                <li class="menu-header">Supplier</li>
-                <li class="nav-item @yield('active_supplier')">
-                    <a href="{{ route('supplier.index') }}" class="nav-link">
-                        <i class="fas fa-archive"></i><span>Supplier</span>
+                <li class="menu-header">Keranjang</li>
+                <li class="nav-item @yield('active_keranjang')">
+                    <a href="{{ route('keranjang.index') }}" class="nav-link">
+                        <i class="fas fa-box"></i><span>Keranjang</span>
                     </a>
                 </li>
             @endif
