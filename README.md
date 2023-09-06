@@ -15,7 +15,7 @@ Web Point of Sale yang dibuat oleh <a href="https://github.com/adiwarsa"> Adi Wa
 
 ## Release Date
 
-**Release date : Mar 2022**
+**Release date : Jun 2023**
 
 > Kasirku Web App merupakan project freelance yang dibuat oleh Adi Warsa. Kalian dapat download/fork/clone. Cukup beri stars di project ini agar memberiku semangat. Terima kasih!
 
@@ -78,4 +78,4 @@ Jangan ragu untuk memeriksa halaman masalah jika Anda ingin berkontribusi. **Ber
 ## License
 
 - Copyright © 2022 Adi Warsa.
-- **Sistem Informasi Rental Kendaraani licensed under the MIT license.**
+- **Kasirku licensed under the MIT license.**
